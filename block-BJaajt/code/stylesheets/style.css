@@ -1,0 +1,376 @@
+/* Variables */
+:root {
+  --primary: ;
+  --secondary: ;
+  --accent: ;
+  --textLight: ;
+  --textDark: ;
+  --background: ;
+}
+
+/* Meyers CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Resets */
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+input, textarea, button {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+/* General */
+html {
+    font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* Flex  */
+.flex {
+  display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+
+/* Columns */
+.flex-15 {
+    flex: 0 1 15%;
+}
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-40 {
+    flex: 0 1 40%;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-60 {
+    flex: 0 1 60%;
+}
+.grow {
+    flex: 1 1 auto;
+}
+
+/* Padding */
+.padding {
+  padding: 5rem 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  background-color:cornflowerblue;
+  color: #ffffff;
+  transition: all 200ms ease-in-out;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  font-weight: 100;
+  margin-top: 2rem;
+}
+.btn:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    opacity: 0.8;
+    color: #ffffff!important;
+}
+
+/* Active Link */
+.active {
+    color: cornflowerblue;
+}
+
+/* Nav and General Links Hover */
+a:hover {
+    color: white;
+}
+
+/* Full Width */
+.width-full {
+    width: 100%;
+}
+
+/* Headings*/
+.heading {
+  font-size: 5rem;
+  color: cornflowerblue;
+  margin-bottom: 2rem;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.heading-secondary {
+    font-size: 2.2rem;
+}
+
+/* Text */
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-accent {
+    color: var(--accent);
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.font-0 {
+    font-size: 0;
+}
+
+/* Clearfix */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+/* 
+1)Common Tags that I forget:
+<nav>
+<fieldset>
+<figure>
+<article>
+<aside>
+
+2) Use max-width, max-height for images and tables
+
+3) Add viewport meta tag to HTML
+
+4) Code in 'rem'
+ */
+
+
+ h1 {
+     margin-top: 5rem;
+ }
+ input {
+     border: 1px solid black;
+     font-size: 1rem;
+     padding: 1rem;
+     width: 100%;
+     border-radius: 50px;
+ }
+
+ .input-box {
+     max-width: 1000px;
+     margin: 0 auto;
+     width: 100%;
+     background-color: cornflowerblue;
+     padding: 2rem;
+     
+     border-radius: 50px;
+ }
+ input::placeholder{
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 100;
+ }
+
+ h2 {
+    font-size: 2rem!important;
+    color: white!important;
+    padding-top: 2rem;
+    margin-bottom: 0!important;
+ }
+ h3  {
+    color: white!important;
+    font-size: 1.5rem!important;
+ }
+
+ a {
+     text-decoration: underline;
+ }
+
+.user-image {
+    border-radius: 50%;
+    width: 200px;
+}
