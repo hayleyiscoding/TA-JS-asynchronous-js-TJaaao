@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Using API's</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="heading">GitHub User Finder</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="input-box">
+          <input type="text" placeholder="Enter a GitHub username" />
+        </div>
+        <div class="input-box hayley">
+          <img src="./img/hippo.png" alt="user-image" class="user-image" />
+          <h2 class="heading"></h2>
+          <a href="#">@flowersforall</a>
+          <div class="flex center follow-div">
+            <h3 class="heading">Followers</h3>
+            <ul class="flex followers">
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+            </ul>
+          </div>
+          <div class="flex center follow-div">
+            <h3 class="heading">Following</h3>
+            <ul class="flex following">
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+              <li><img src="./img/hippo.png" alt="Flower" /></li>
+            </ul>
+          </div>
+        </div>
+        <p style="display: none">This user does not exist!</p>
+      </div>
+      <hr />
+      <div class="container cat-div">
+        <h1 class="heading">Get Random Cat</h1>
+        <img src="./img/cat.png" alt="Cat" class="cat-img"/>
+        <br>
+        <button class="btn btn-primary">Get New Cat</button>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
