@@ -10,7 +10,7 @@ function fetch(url) {
     // Get the data - add event.target.value as search term in url
     xhr.open("GET", url);
     xhr.onload = function () {
-      let imageData = resolve(JSON.parse(xhr.response));
+      resolve(JSON.parse(xhr.response));
       // Search returns an array of objects. Need to loop through the array with map and return an array that just has the urls.
     };
     //   Error Message
